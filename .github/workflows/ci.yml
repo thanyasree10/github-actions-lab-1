@@ -1,0 +1,15 @@
+name: CI Practice
+
+on:
+  workflow_dispatch:
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a message
+        run: echo "My first CI workflow is running!"
+
+      - name: Check the runner
+        run: echo "Running on GitHub's Ubuntu runner"
